@@ -1,1 +1,5 @@
 _site/
+.rbenv-version
+.bundle
+vendor/bundle/ruby
+bin
