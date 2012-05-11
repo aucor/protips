@@ -105,6 +105,43 @@ input:valid, textarea:valid {  }
 input:invalid, textarea:invalid { background-color: #f0dddd; }
 
 
+.bigbutton {
+  display: inline-block;
+  margin: 5px 0 15px;
+  background-color: #8a600c;
+  /*background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9e76e8), color-stop(50%, #7038e0), color-stop(50%, #6021de), color-stop(100%, #6224de));*/
+  background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.0) 40%, rgba(255,255,255,0.0) 100%);
+  background-image: -moz-linear-gradient(top, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.0) 40%, rgba(255,255,255,0.0) 100%);
+  background-image: -ms-linear-gradient(top, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.0) 40%, rgba(255,255,255,0.0) 100%);
+  background-image: -o-linear-gradient(top, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.0) 40%, rgba(255,255,255,0.0) 100%);
+  background-image: linear-gradient(top, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0.0) 40%, rgba(255,255,255,0.0) 100%);
+  border: 1px solid #8a600c;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  color: #fff;
+  font: bold 36px sans-serif;
+  line-height: 1;
+  padding: 25px 30px 25px;
+  text-align: center;
+  text-shadow: 0px -2px 0px rgba(0,0,0,0.4);
+  -webkit-background-clip: padding-box;
+  
+  box-shadow: inset 1px 1px 0px rgba(255,255,255,0.2), inset -1px -1px 0px rgba(255,255,255,0.2), inset -1px 1px 0px rgba(255,255,255,0.2), inset 1px -1px 0px rgba(255,255,255,0.2), 0 9px 0 #694606;
+  position: relative;
+} 
+  .bigbutton:hover {
+    background-color: #987115;
+    -webkit-background-clip: padding-box;
+    cursor: pointer;
+    color: #fff; }
+  .bigbutton:active {
+    top: 4px;
+    box-shadow: inset 1px 1px 0px rgba(255,255,255,0.2), inset -1px -1px 0px rgba(255,255,255,0.2), inset -1px 1px 0px rgba(255,255,255,0.2), inset 1px -1px 0px rgba(255,255,255,0.2), 0 5px 0 #694606;
+  }
+
+
+
 /* =============================================================================
    Tables
    ========================================================================== */
@@ -115,8 +152,27 @@ th { text-align: left; }
 /* =============================================================================
    Primary styles
    ========================================================================== */
+body {
+  background: #4d4d4f;
+}
 
+#branding {
+  text-align: center;
+  padding: 20px 0 25px;
+}
+  #logo {
+    display: block;
+    line-height: 0;
+  }
 
+#main {
+  background: #fff;
+}
+
+.inner {
+  width: 980px;
+  margin: 0 auto;
+}
 
 /* =============================================================================
    Non-semantic helper classes

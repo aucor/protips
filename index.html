@@ -1,7 +1,8 @@
 ---
 layout: default
-classes: front
 ---
+<a class="bigbutton">Get another tip</a>
+{% comment %}
 {% for post in site.posts limit: 1 %}
   <article class="news">
     <hgroup>
@@ -11,3 +12,4 @@ classes: front
     {{ post.content | truncate: 300 }}
  </article>
 {% endfor %}
+{% endcomment %}
