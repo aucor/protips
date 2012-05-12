@@ -1,6 +1,29 @@
 	<footer id="colophon">
 	  <div class="inner">
-      
+      <h2>Liked the tips?</h2>
+      <section>
+        <h4>then <strong>like us</strong> on facebook</h4>
+        <div class="fb-like-box" data-href="http://www.facebook.com/aucoroy" data-width="220" data-show-faces="false" data-stream="false" data-header="false"></div>
+      </section>
+      <section>
+        <h4>and <strong>follow us</strong> on twitter</h4>
+        <a href="https://twitter.com/aucor" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @aucor</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </section>
+      <section>
+        <h4>or <strong>suggest</strong> your own tip</h4>
+        <form id="form-suggest" method="post" action="process.php">
+          <div>
+            <p><label for="name">Name</label>
+              <input type="text" id="name" name="name"></p>
+            <p><label for="email">Email</label>
+             <input type="email" id="email" name="email"></p>
+            <p><label for="message">Suggestion</label>
+              <textarea id="message" name="message"></textarea></p>
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </section>
     </div>
 	</footer>
 </div>
@@ -9,10 +32,10 @@
 <script src="/js/scripts.min.js"></script>
 
 <script>
-	/*var _gaq=[['_setAccount','UA-'],['_trackPageview']];
+	var _gaq=[['_setAccount','UA-2285811-6'],['_trackPageview']];
 	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.async=1;
 	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-	s.parentNode.insertBefore(g,s)}(document,'script'));*/
+	s.parentNode.insertBefore(g,s)}(document,'script'));
 </script>
 
 </body>
