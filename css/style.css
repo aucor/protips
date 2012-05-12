@@ -177,44 +177,131 @@ body {
 footer {
   color: #fff;
   padding: 30px 0;
+  overflow: hidden;
 }
 
-footer a  {
-  color: #fff;
+  footer a  {
+    color: #fff;
+  }
+
+  footer h2 {
+    margin: 0;
+  }
+
+  footer h4 {
+    margin: 0 0 20px;
+    font-weight: normal;
+  }
+
+  footer section {
+    float: left;
+    width: 33%;
+  }
+
+  footer .fb-like-box {
+    background: #fff;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+  }
+
+  footer form label {
+    display: none;
+  }
+
+  footer form p {
+    margin: 0 0 5px;
+  }
+
+  footer form p.wrap-email {
+    margin-bottom: 27px;
+  }
+
+  footer form input.text,
+  footer form textarea {
+    color: #fff;
+    width: 280px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #555;
+    padding: 2px 5px;
+  }
+
+  footer form textarea {
+    height: 141px;
+    line-height: 1.85;
+    background: url(../img/stripe.gif) top;
+    resize: none;
+  }
+
+  footer form input:focus,
+  footer form textarea:focus {
+    border-color: #f1f1f1;
+    outline: none;
+  }
+
+#github {
+  left: -65px;
+  height: 30px;
+  top: 40px;
+  position: absolute;
+  text-decoration: none;
+  width: 250px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  filter: progid:DXImageTransform.Microsoft.Matrix(M11=0.7071067811865476, M12=0.7071067811865475, M21=-0.7071067811865475, M22=0.7071067811865476, sizingMethod='auto expand');
+  zoom: 1;
 }
 
-footer h2 {
-  margin: 0;
+#github span {
+  background: black;
+  color: white;
+  font-size: 14px;
+  left: 0;
+  padding: 5px 0;
+  position: absolute;
+  text-align: center;
+  width: 250px;
+  -webkit-box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+  -webkit-transition: opacity 1s ease-out;
+  -moz-transition: opacity 1s ease-out;
+  -ms-transition: opacity 1s ease-out;
+  -o-transition: opacity 1s ease-out;
+  transition: opacity 1s ease-out;
 }
 
-footer h4 {
-  margin: 0 0 20px;
-  font-weight: normal;
+#github span:last-child {
+  background: #8a600c;
+  opacity: 0;
 }
 
-footer section {
-  float: left;
-  width: 33%;
+#github:hover span:first-child {
+  opacity: 0;
 }
 
-footer .fb-like-box {
-  background: #fff;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  -moz-background-clip: padding; -webkit-background-clip: padding-box; background-clip: padding-box;
+#github:hover span:last-child {
+  opacity: 1;
 }
 
-footer form label {
-  display: block;
-}
-
-footer form p {
-  margin: 0 0 10px;
-}
-
-footer form textarea {
-  width: 280px;
-  height: 160px;
+@media all and (-webkit-transform-3d) {
+  #github:hover span:first-child {
+    -webkit-transform: rotateX(180deg);
+  }
+  #github:hover span:last-child {
+    -webkit-transform: rotateX(360deg);
+  }
+  #github span {
+    opacity: 1 !important;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 1s;
+  }
+  #github span:last-child {
+    -webkit-transform: rotateX(180deg);
+  }
 }
 
 /* =============================================================================
