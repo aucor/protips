@@ -22,8 +22,8 @@ if( isset($_POST) ){
 
   //validate email address
   if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
-      $formok = false;
-      $errors[] = "You have not entered a valid email address";
+    $formok = false;
+    $errors[] = "You have not entered a valid email address";
   }
 
   //validate message is not empty
@@ -42,13 +42,13 @@ if( isset($_POST) ){
     $headers = "From: noreply@aucor.fi" . "\r\n";
     $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
-    $emailbody = "<p>You have received a new message from the enquiries form on your website.</p>
+    $emailbody = "<p>Someone suggested a new top, a protip.</p>
                   <p><strong>Name: </strong> {$name} </p>
                   <p><strong>Email Address: </strong> {$email} </p>
                   <p><strong>Message: </strong> {$message} </p>
                   <p>This message was sent from the IP Address: {$ipaddress} on {$date} at {$time}</p>";
 
-    mail("sami@aucor.fi","Aucor.fi Protips - New protip",$emailbody,$headers);
+    mail("sami@aucor.fi","Aucor.fi Protips - New tip suggestion",$emailbody,$headers);
   }
 
   //what we need to return back to our form
@@ -64,12 +64,12 @@ if( isset($_POST) ){
 
   //if this is not an ajax request
   if(empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) !== 'xmlhttprequest'){
-      //set session variables
-      session_start();
-      $_SESSION['cf_returndata'] = $returndata;
+    //set session variables
+    session_start();
+    $_SESSION['cf_returndata'] = $returndata;
 
-      //redirect back to form
-      header('location: ' . $_SERVER['HTTP_REFERER']);
+    //redirect back to form
+    header('location: ' . $_SERVER['HTTP_REFERER']);
   }
 }
 

@@ -9,5 +9,4 @@ $(document).ready(function() {
       $('#slides').animate({'height': $(nextSlideElement).css('height')}, 400);
     }
   });
-  
 });
