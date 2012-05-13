@@ -2,4 +2,6 @@ auto: true
 server: true
 markdown: kramdown
 
+permalink: /:i_day.html
+
 exclude: Gemfile, Gemfile.lock, README.md, vendor, bin
