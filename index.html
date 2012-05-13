@@ -1,15 +1,17 @@
 ---
 layout: default
 ---
-<a class="bigbutton">Get another tip</a>
-{% comment %}
-{% for post in site.posts limit: 1 %}
-  <article class="news">
-    <hgroup>
-      <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-      <p class="writer">{{ post.date | date_to_string }} / {{ post.author }}</p>
+<section id="slides">
+{% for post in site.posts %}
+  <article class="slide" id="tip-{{ post.tip }}">
+    <hgroup class="inner">
+      <h3 class="tip">TIP #{{ post.tip }}</h3>
     </hgroup>
-    {{ post.content | truncate: 300 }}
+    {{ post.content }}
  </article>
 {% endfor %}
-{% endcomment %}
+</section>
+
+<p id="getnext">
+<a class="bigbutton">Get another tip</a>
+</p>
