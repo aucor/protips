@@ -32,10 +32,10 @@ body, button, input, select, textarea { font-family: 'Droid Sans', sans-serif; c
    Links
    ========================================================================== */
 
-a { color: #003141; text-decoration: none; }
-a:visited { color: #003141; }
+a { color: #b69529; text-decoration: none; }
+a:visited { color: #b69529; }
 a:focus { outline: thin dotted; }
-a:hover, a:active { outline: 0; color: #f9921c;}
+a:hover, a:active { outline: 0; color: #8a600c;}
 
 
 /* =============================================================================
@@ -227,6 +227,7 @@ body {
   width: 196px;
   text-align: center;
   font-size: 30px;
+  padding: 5px 0;
   color: #fff;
   white-space: nowrap;
   -webkit-border-bottom-right-radius: 20px;
