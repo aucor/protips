@@ -104,6 +104,8 @@ textarea { overflow: auto; vertical-align: top; }
 input:valid, textarea:valid {  }
 input:invalid, textarea:invalid { background-color: #f0dddd; }
 
+input, textarea { font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif; }
+
 .button {
   background-color: #8a600c;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #8a600c), color-stop(100%, #73500A));
@@ -303,8 +305,8 @@ footer {
   }
 
   footer form textarea {
-    height: 141px;
-    line-height: 1.85;
+    height: 138px;
+    line-height: 1.75;
     background: url(../img/stripe.gif) top;
     resize: none;
   }

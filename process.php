@@ -48,7 +48,7 @@ if( isset($_POST) ){
                   <p><strong>Message: </strong> {$message} </p>
                   <p>This message was sent from the IP Address: {$ipaddress} on {$date} at {$time}</p>";
 
-    mail("sami@aucor.fi","Aucor.fi Protips - New tip suggestion",$emailbody,$headers);
+    mail("webmaster@aucor.fi","Aucor.fi Protips - New tip suggestion",$emailbody,$headers);
   }
 
   //what we need to return back to our form
